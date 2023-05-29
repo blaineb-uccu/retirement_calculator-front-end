@@ -42,3 +42,11 @@ export const updateAllowance = (ywr) => {
 export const updateMagicNum = (num) => {
     return {type: 'UPDATE_MAGICNUM', payload: num}
 }
+
+export const updateExpenses = (num) => {
+    return {type: 'UPDATE_EXPENSES', payload: num}
+}
+
+export const updateSalary = (num) => {
+    return {type: 'UPDATE_SALARY', payload: num}
+}

@@ -17,7 +17,9 @@ const initialState = {
     ywr: '',
     inflation: '',
     allowance: '',
-    magicNum : 0
+    magicNum : 0,
+    expenses: 0,
+    salary: 0,
 }
 
 const Reducer = (state = initialState, action) => {
@@ -74,6 +76,18 @@ const Reducer = (state = initialState, action) => {
             return {
                 ...state,
                 magicNum: action.payload
+                }
+
+        case 'UPDATE_EXPENSES':
+            return {
+                ...state,
+                expenses: action.payload
+                }
+
+        case 'UPDATE_SALARY':
+            return {
+                ...state,
+                expenses: action.payload
                 }
 
         default:
